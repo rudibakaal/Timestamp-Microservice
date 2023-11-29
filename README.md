@@ -3,7 +3,7 @@
 This project is a Timestamp Microservice created as part of the freeCodeCamp Back End Development and API certification. The microservice allows users to obtain the Unix timestamp and Coordinated Universal Time (UTC) for a given date.
 
 **Usage:**
-- Example Endpoint: https://project-timestamp.bfskinner1995.repl.co/api/:userInput
+- Example Endpoint: project-timestamp.bfskinner1995.repl.co/api/:userInput
 
 **Explore the live app:** [Timestamp Microservice](https://project-timestamp.bfskinner1995.repl.co/)
 
