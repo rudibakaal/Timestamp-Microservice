@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Timestamp Microservice | freeCodeCamp Project</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+
+     <script src="index.js"></script>
+   </head>
+
+   <body>
+    <h1>Timestamp Microservice</h1>
+    <hr />
+    <div class="container">
+      <h3>Example Usage:</h3>
+      <ul>
+        <li><a id='dateLook' href="api/2015-12-25">[project url]/api/2015-12-25</a></li>
+        <li><a id='timeStamp' href="api/1451001600000">[project url]/api/1451001600000</a></li>
+      </ul>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+    </div>
+    <div class="footer">
+      <p>
+        freeCodeCamp Project By Rudi Bakaal
+      </p>
+    </div>
+
+
+
+     <script>
+       const currentDate = new Date();
+
+       const yearMonthDay = currentDate.toISOString().slice(0, 10);
+
+
+       const gmtDate = currentDate.toUTCString();
+       const unixEpoch = Date.now()
+
+       
+       const dateLink = document.getElementById("dateLook");
+       dateLink.innerHTML = yearMonthDay
+       dateLink.href = "/api/"+yearMonthDay
+
+       
+     </script>
+
+
+     
+  </body>
+
+
+  
+</html>
